@@ -23,7 +23,10 @@ module.exports = {
 
   modules: [
     '@nuxtjs/sitemap',
-    ['@nuxtjs/google-tag-manager', { id: 'GTM-XXXXXXX' }],
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-KJ8ZQ7N' }],
+    ['wp-nuxt', {
+      endpoint: 'https://staging.admin.rf-blog.rabbitinternet.com/wp-json'
+    }]
   ],
 
   /*

@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <app-nav/>
-
-    <div class="container">
-
-      <img src="@/assets/images/logo.jpeg" width="80">
-      <nuxt/>
+  <div class="container">
+    <div class="text-center">
+      <img src="@/assets/images/rf-blog.svg" class="logo" width="280">
     </div>
+    <app-nav/>
+    <nuxt/>
   </div>
 </template>
 
@@ -31,6 +29,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+.logo {
+  margin: 20px 0;
 }
 
 body {

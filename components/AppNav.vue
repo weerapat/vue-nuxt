@@ -19,6 +19,9 @@
           <nuxt-link class="nav-link" to="/credit-card">Credit Card</nuxt-link>
         </li>
         <li class="nav-item">
+          <nuxt-link class="nav-link" to="/blog/list">RF blog</nuxt-link>
+        </li>
+        <li class="nav-item">
           <nuxt-link class="nav-link" to="/about-us">About Us</nuxt-link>
         </li>
       </ul>
