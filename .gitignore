@@ -12,3 +12,4 @@ dist
 
 # Ide files
 *.idea
+*.DS_Store
