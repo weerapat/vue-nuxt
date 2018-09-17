@@ -29,9 +29,7 @@
           pathArray.splice(0, 1);
         }
 
-        window.location.href = `/${this.lang}/` + pathArray.join('/');
-
-        console.log(path);
+        window.location.href = `/${this.lang}/${pathArray.join('/')}`;
       }
     },
   }
