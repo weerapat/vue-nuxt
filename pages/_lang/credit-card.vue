@@ -7,7 +7,7 @@
 <template>
   <section>
     <div>
-      <h1>Hellooo {{ name }}! {{ $t('title') }}</h1>
+      <h1>Helloo {{ name }}! {{ $t('title') }}</h1>
 
       {{ $t('message.hello') }}
 
@@ -17,8 +17,6 @@
 
         {{ $route.params.slug || 'Home' }}
         {{ $route.params.filter || 'Home' }}
-
-        <!--{{ JSON.parse($route.params) }}-->
       </div>
 
 
@@ -26,8 +24,8 @@
 
       <form>
         <input type="text" v-model="card_name" name="card name" placeholder="new card">
-        <button class="btn" type="button"
-          @click="addCard()">Add test
+        <button class="btn btn-info" type="button"
+          @click="addCard()">Add
         </button>
       </form>
 
@@ -50,9 +48,6 @@
 </template>
 
 <script>
-  import AppLogo from '~/components/AppLogo.vue'
-  import CardFilter from '~/components/CardFilter.vue'
-
   export default {
     i18n: { // `i18n` option, setup locale info for component
       messages: {
@@ -99,17 +94,5 @@
 <style scope>
   body {
     background-color: beige;
-  }
-
-  section {
-    padding-top: 60px;
-  }
-
-  .btn {
-    display: inline-block;
-    padding: 5px 15px;
-    background-color: #47494e;
-    color: white;
-    border-radius: 5px;
   }
 </style>

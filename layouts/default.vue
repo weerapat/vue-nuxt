@@ -3,6 +3,8 @@
     <app-nav/>
 
     <div class="container">
+
+      <img src="@/assets/images/logo.jpeg" width="80">
       <nuxt/>
     </div>
   </div>
@@ -29,6 +31,14 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+}
+
+section {
+  padding-top: 60px;
 }
 
 *, *:before, *:after {

@@ -10,6 +10,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <a class="navbar-brand" href="#">Credit Card</a>
+      <LocaleChanger/>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
           <nuxt-link class="nav-link" to="/">Home <span class="sr-only">(current)</span></nuxt-link>
@@ -29,7 +30,14 @@
   </nav>
 </template>
 
-// we use fetch() because we do not need to set data to this component
-fetch ({ store, redirect }) {
-console.log(store);
-}
+
+
+<script>
+  import LocaleChanger from '~/components/LocaleChanger.vue'
+
+  export default {
+    components: {
+      LocaleChanger
+    },
+  }
+</script>
