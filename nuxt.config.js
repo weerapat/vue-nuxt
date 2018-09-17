@@ -21,6 +21,11 @@ module.exports = {
 
   plugins: ['~/plugins/i18n.js'],
 
+  modules: [
+    '@nuxtjs/sitemap',
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-XXXXXXX' }],
+  ],
+
   /*
   ** Customize the progress bar color
   */
