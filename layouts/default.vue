@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!--<app-header/>-->
     <app-nav/>
     <div class="container">
       <div class="text-center">
@@ -11,14 +12,15 @@
   </div>
 </template>
 
-
 <script>
   import AppNav from '~/components/AppNav.vue';
+  import AppHeader from '~/components/AppHeader.vue';
   import AppFooter from '~/components/AppFooter.vue';
 
   export default {
     components: {
       AppNav,
+      AppHeader,
       AppFooter,
     },
   }

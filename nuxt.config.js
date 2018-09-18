@@ -11,7 +11,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' }
+      // { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' },
+      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' },
     ]
   },
 
@@ -23,6 +24,7 @@ module.exports = {
 
   modules: [
     '@nuxtjs/sitemap',
+    '~/modules/simple',
     ['@nuxtjs/google-tag-manager', { id: 'GTM-KJ8ZQ7N' }],
     ['wp-nuxt', {
       endpoint: 'https://staging.admin.rf-blog.rabbitinternet.com/wp-json'

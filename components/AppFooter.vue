@@ -7,7 +7,7 @@
 
   export default {
     mounted () {
-      var self = this;
+      let self = this;
       // We can use async/await ES6 feature
       axios.get('/api/footer.json')
         .then(function (response) {
