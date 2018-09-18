@@ -1,20 +1,25 @@
 <template>
-  <div class="container">
-    <div class="text-center">
-      <img src="@/assets/images/rf-blog.svg" class="logo" width="280">
-    </div>
+  <div>
     <app-nav/>
-    <nuxt/>
+    <div class="container">
+      <div class="text-center">
+        <img src="@/assets/images/rf-blog.svg" class="logo" width="280">
+      </div>
+      <nuxt/>
+    </div>
+    <app-footer/>
   </div>
 </template>
 
 
 <script>
-  import AppNav from '~/components/AppNav.vue'
+  import AppNav from '~/components/AppNav.vue';
+  import AppFooter from '~/components/AppFooter.vue';
 
   export default {
     components: {
-      AppNav
+      AppNav,
+      AppFooter,
     },
   }
 </script>
